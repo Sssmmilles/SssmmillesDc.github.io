@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <!-- Мгновенный редирект (fallback для браузеров без JS) -->
+  <meta http-equiv="refresh" content="0;url=https://discord.com/users/1129546209485406299" />
+  <title>Redirecting…</title>
+  <style>
+    /* Небольшая красивая заглушка на случай, если редирект задержится */
+    html,body{height:100%;margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;}
+    .wrap{height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:1rem}
+    a{color:inherit;text-decoration:underline}
+  </style>
+  <script>
+    // Надёжный JS-редирект (не добавляет запись в историю)
+    (function(){
+      var target = "https://discord.com/users/1129546209485406299";
+      // Используем replace чтобы пользователь не мог вернуться на эту страницу кнопкой "назад"
+      try {
+        window.location.replace(target);
+      } catch (e) {
+        // на всякий случай — fallback через assignment
+        window.location.href = target;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Перенаправление…</h1>
+    <p>Если перенаправление не сработало автоматически — нажмите <a href="https://discord.com/users/1129546209485406299">сюда</a>.</p>
+  </div>
+</body>
+</html>
